@@ -1,21 +1,25 @@
 /* Write your CSS here! */
+/* colors for page
+	#0a0303 black
+	#a9e2ea blue
+	#e45435 orange
+	#87a2a7 grey */
 header {
 	/* padding: 5% 20%; */
 	background: #00283c;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column-reverse;
 	height: auto;
 }
 
 h1 {
 	text-shadow: #0a0303;
-	font-size: 8vw;
+	font-size: 2vw;
 	margin: auto;
 }
 
 header p {
 	font-size: auto;
-	fil
 }
 
 body {
@@ -33,6 +37,7 @@ body {
 }
 
 #testP {
+	color: white;
 }
 article {
 	color: #0000ff;
@@ -40,11 +45,12 @@ article {
 
 .navigation {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	justify-content: space-evenly;
 
 	list-style: none;
 	margin: 0;
+	margin-bottom: 3vh;
 }
 
 .navigation button {
@@ -55,17 +61,21 @@ article {
 	background: #0a0303;
 	outline: none;
 	border: 0;
+	flex-grow: 1;
+	word-wrap: normal;
+	max-width: 15vw;
+	height: auto;
 }
 .navigation button:hover {
 	background: #00283c;
 }
 
 article {
-	display: flex;
+	display: inline-flex;
 	margin-top: 8px;
 	margin-bottom: 8px;
 	padding: 24px;
-	
+	box-shadow: inset 0px 0px 10px #0a0303;
 }
 
 article h2 {
@@ -79,15 +89,22 @@ article div {
 .header-type {
 	text-align: center;
 	size: auto;
-	text-wrap: nowrap;
 }
-
 
 .alternate-odd {
 	color: #0a1b29;
 	background-color: #b7c7da;
+	text-shadow: 1px 1px 20px #0a1b29;
 }
 .alternate-even {
 	color: #b7c7da;
 	background-color: #0a1b29;
+	text-shadow: 1px 1px 20px #b7c7da;
 }
+img {
+	box-shadow: 2px 2px 5px #0a0303;
+	width: 20vw;
+	height: 20vw;
+}
+
+/* https://huemint.com/website-2/#palette=0a0303-a9e2ea-e45435-87a2a7 */
