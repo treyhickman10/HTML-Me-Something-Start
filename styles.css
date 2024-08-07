@@ -4,28 +4,48 @@
 	#a9e2ea blue
 	#e45435 orange
 	#87a2a7 grey */
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+** {
+	padding: 0;
+	margin: 0;
+}
+
 header {
-	/* padding: 5% 20%; */
 	background: #00283c;
 	display: flex;
 	flex-direction: column-reverse;
 	height: auto;
+	font-family: "Bitter", serif;
+	padding: 0%;
+	margin: 0%;
+}
+article,
+header {
+	border-radius: 16px;
+	margin: 4px;
 }
 
 h1 {
 	text-shadow: #0a0303;
-	font-size: 2vw;
-	margin: auto;
+	font-size: 48px;
+	margin: 4px;
+	padding: 0px 8px;
 }
 
 header p {
-	font-size: auto;
+	font-size: 105%;
+	font-weight: 300;
+	margin-bottom: 24px;
+	padding: 0px 24px;
 }
 
 body {
 	margin: 8px;
 	display: block;
 	background-color: #0a0303;
+	font-family: "Bitter", serif;
 }
 
 #mainHeading {
@@ -47,13 +67,13 @@ article {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
-
+	align-items: center;
 	list-style: none;
 	margin: 0;
-	margin-bottom: 3vh;
+	border-radius: 16px;
 }
 
-.navigation button {
+.navigation a {
 	text-decoration: none;
 	display: block;
 	padding: 1em;
@@ -63,10 +83,12 @@ article {
 	border: 0;
 	flex-grow: 1;
 	word-wrap: normal;
-	max-width: 15vw;
-	height: auto;
+	min-height: max-content;
+	text-wrap: wrap;
+	text-align: center;
+	padding: 15px;
 }
-.navigation button:hover {
+.navigation a:hover {
 	background: #00283c;
 }
 
@@ -79,32 +101,34 @@ article {
 }
 
 article h2 {
+	font-size: 3vw;
+	margin: 0;
 	text-align: center;
+	padding: 0;
 }
 article div {
-	padding: 12px;
-	margin: auto;
-}
-
-.header-type {
-	text-align: center;
-	size: auto;
+	padding-left: 24px;
+	margin: 0;
+	padding-bottom: 0px;
 }
 
 .alternate-odd {
 	color: #0a1b29;
 	background-color: #b7c7da;
-	text-shadow: 1px 1px 20px #0a1b29;
 }
 .alternate-even {
-	color: #b7c7da;
-	background-color: #0a1b29;
-	text-shadow: 1px 1px 20px #b7c7da;
+	color: #0a1b29;
+	background-color: #b7c7da;
 }
 img {
-	box-shadow: 2px 2px 5px #0a0303;
+	box-shadow: 0px 0px 8px #0a0303;
 	width: 20vw;
 	height: 20vw;
+	margin-right: 24px;
+}
+
+footer {
+	color: #b7c7da;
 }
 
 /* https://huemint.com/website-2/#palette=0a0303-a9e2ea-e45435-87a2a7 */
