@@ -49,11 +49,11 @@ body {
 }
 
 #mainHeading {
-	color: #ff0000;
+	color: red;
 }
 
 .funParagraph {
-	color: #008000;
+	color: green;
 }
 
 #testP {
